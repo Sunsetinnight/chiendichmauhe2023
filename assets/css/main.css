@@ -2523,7 +2523,7 @@ input, select, textarea {
 			width: 2.5em;
 			height: 2.5em;
 			display: block;
-			background: #FFFAF0;
+			background: #ffaa00;
 			border-radius: 100%;
 			color: #1E90FF;
 			text-align: center;
@@ -3364,14 +3364,7 @@ input, select, textarea {
 		}
 
 /* Header */
-#logo {
-	display: inline-block;
-	margin: 10px; /* margin: 20px was off */
-	float: right;
-	height: 60px;
-	width: auto; /* correct proportions to specified height */
-	border-radius: 0%; /* makes it a circle */
-  }
+
 	#header {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -3531,7 +3524,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #1E90FF;
+		background: #0071b3;
 		cursor: default;
 		height: 100vh;
 		left: 0;
