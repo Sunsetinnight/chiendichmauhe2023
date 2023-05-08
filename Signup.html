@@ -47,7 +47,10 @@
 							<section id="one">
 								<div class="inner">
 									<header class="major">
-										<h1>ĐĂNG KÝ CHIẾN SĨ HÈ</h1>
+										<h1>ĐĂNG KÝ TRỞ THÀNH CHIẾN SĨ HÈ 2023</h1>
+											
+											<br>
+											<h3><b>Thời gian: 15/5/2023 - 25/5/2023</b></h3>
 									</header>
 									<span class="image main"><img src="images/coverhe1.jpg" alt="" /></span>
 									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
@@ -62,7 +65,8 @@
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form method="post" action="#">
+					
+								<form method="post" action="" name="contact-us">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -70,18 +74,58 @@
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
+											<input type="email" name="email" id="email" required/>
 										</div>
+										<div class="field">
+											<input name="phonenumber" type="text" placeholder="Số điện thoại">
+											<input name="firstName" type="text" placeholder="First Name">
+											<input name="lastName" type="text" placeholder="Last Name">
+										</div>
+
+										<!-- Giới tính -->
+										<div class="field half">
+											<input type="radio" id="demo-priority-low" name="demo-priority">
+											<label for="demo-priority-low">Nam</label>
+										</div>
+										<div class="field half">
+											<input type="radio" id="demo-priority-normal" name="demo-priority">
+											<label for="demo-priority-normal">Nữ</label>
+										</div>
+
 										<div class="field">
 											<label for="message">Message</label>
 											<textarea name="message" id="message" rows="6"></textarea>
 										</div>
-									</div>
+									</div>	
+								
+									<!-- Gửi kết quả -->
 									<ul class="actions">
 										<li><input type="submit" value="Send Message" class="primary" /></li>
 										<li><input type="reset" value="Clear" /></li>
 									</ul>
 								</form>
+								
+								  
+								  <script>
+									const scriptURL = 'https://script.google.com/macros/s/AKfycbysof7VyQmgHYcMSrcCdTohKCeA7Tc9Li-2-LI83HDcJGPdT13HhKjYSMkQnS6qnbneuQ/exec'
+									const form = document.forms['contact-us']
+								  
+									form.addEventListener('submit', e => {
+									  e.preventDefault()
+									  fetch(scriptURL, { method: 'post', body: new FormData(form)})
+										.then(response => console.log('Success!', response))
+										.catch(error => console.error('Error!', error.message))
+									})
+								  </script>
+
+
+
+
+
+
+
+
+
 							</section>
 							<section class="split">
 								<section>
