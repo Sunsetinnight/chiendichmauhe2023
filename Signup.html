@@ -44,22 +44,22 @@
 					<div id="main" class="alt">
 
 						<!-- One -->
-							<section id="one">
+							<!-- <section id="one">
 								<div class="inner">
 									<header class="major">
 										<h1>ĐĂNG KÝ TRỞ THÀNH CHIẾN SĨ HÈ 2023</h1>
 											
 											<br>
-											<h3><b>Thời gian: 15/5/2023 - 25/5/2023</b></h3>
+											<h3><b>Thời gian: 18/5/2023 - 25/5/2023</b></h3>
 									</header>
 									<span class="image main"><img src="images/coverhe1.jpg" alt="" /></span>
 									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
 									<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
 								</div>
-							</section>
+							</section> -->
 
-							<div style="text-align: center; padding-top:20px;">
+							<div style="text-align: center; padding-top:30px;">
 								<header><h2>ĐƠN ĐĂNG KÝ CHIẾN SĨ HÈ 2023</h2></header>
 							</div>
 					</div>
@@ -72,34 +72,77 @@
 								<form method="post" action="" name="contact-us">
 									<div class="fields">
 										<div class="field half">
-											<label for="name">Name</label>
+											<label for="name">Họ và tên</label>
 											<input type="text" name="name" id="name" />
 										</div>
 										<div class="field half">
-											<label for="email">Email</label>
-											<input type="email" name="email" id="email" required/>
+											<label for="datebirth">Ngày sinh</label>
+											<input name="datebirth" type="text" placeholder="20/02/2004"/>
 										</div>
 										<div class="field">
+											<label for="email">Liên hệ</label>
+											<input name="email" type="email" placeholder="Email">
 											<input name="phonenumber" type="text" placeholder="Số điện thoại">
-											<input name="firstName" type="text" placeholder="First Name">
-											<input name="lastName" type="text" placeholder="Last Name">
+											<input type="url" name="facebook" type="text" placeholder="Liên kết Facebook">
 										</div>
 
 										<!-- Giới tính -->
-										<div class="field half">
-											<input type="radio" id="demo-priority-low" name="demo-priority">
-											<label for="demo-priority-low">Nam</label>
-										</div>
-										<div class="field half">
-											<input type="radio" id="demo-priority-normal" name="demo-priority">
-											<label for="demo-priority-normal">Nữ</label>
+										<div class="field">
+											<label for="sex">Giới tính</label>
+											<select name="sex" id="sex-select">
+												<option value="Nam">Nam</option>
+												<option value="Nữ">Nữ</option>
+											</select>
 										</div>
 
 										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
+											<label>Số CCCD/CMND</label>
+											<input type="text" name="CCCD"/>
 										</div>
+
+										<div class="field">
+											<label>Đơn vị học tập</label>
+											<input type="text" name="Study" placeholder="Trường, Khoa, Lớp"/>
+										</div>
+
+
+										<!-- Đơn vị hoạt động -->
+
+										<div class="field">
+											<label for="education-level">Đơn vị hoạt động</label>
+											<select id="education-level" name="education-level">
+										  		<option value="Chi hội máu 06/01">Chi hội máu 06/01</option>
+										  		<option value="Chi hội máu 24/01">Chi hội máu 24/01</option>
+										  		<option value="Chi hội máu 27/02">Chi hội máu 27/02</option>
+										  		<option value="Chi hội máu 08/3">Chi hội máu 08/3</option>
+										  		<option value="Chi hội máu 26/3">Chi hội máu 26/3</option>
+										  		<option value="Chi hội máu 07/4">Chi hội máu 07/4</option>
+										  		<option value="Chi hội máu 08/5">Chi hội máu 08/5</option>
+										  		<option value="Chi hội máu 14/6">Chi hội máu 14/6</option>
+										  		<option value="Chi hội máu 19/8">Chi hội máu 19/8</option>
+										  		<option value="Chi hội máu 15/10">Chi hội máu 15/10</option>
+										  		<option value="Chi hội máu 01/12">Chi hội máu 01/12</option>
+										  		<option value="Chi hội máu 05/12">Chi hội máu 05/12</option>
+												<option value="Đơn vị khác">Đơn vị khác</option>
+											</select>
+									  	</div>
+
+										<div class="field">
+											<label>Đội tuyên truyền viên</label>
+											<input type="text" name="activies" placeholder="Đội Thanh niên vận động hiến máu Trường Đại học Công nghệ, ĐHQGHN"/>
+										</div>
+
+										<div class="field">
+											<label>Nơi ở hiện tại</label>
+											<input type="text" name="Address" placeholder="Trần Quốc Vượng, Dịch Vọng Hậu, Cầu Giấy, Hà Nội"/>
+										</div>
+
+										<!-- Bạn có ở Hà Nội vào tháng -->
+
 									</div>	
+
+										
+
 								
 									<!-- Gửi kết quả -->
 									<ul class="actions">
