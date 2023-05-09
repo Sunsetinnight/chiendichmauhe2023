@@ -73,17 +73,17 @@
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Họ và tên</label>
-											<input type="text" name="name" id="name" />
+											<input type="text" name="name" id="name" required />
 										</div>
 										<div class="field half">
 											<label for="datebirth">Ngày sinh</label>
-											<input name="datebirth" type="text" placeholder="20/02/2004"/>
+											<input name="datebirth" type="text" placeholder="20/02/2004"  required/>
 										</div>
 										<div class="field">
 											<label for="email">Liên hệ</label>
-											<input name="email" type="email" placeholder="Email">
-											<input name="phonenumber" type="text" placeholder="Số điện thoại">
-											<input type="url" name="facebook" type="text" placeholder="Liên kết Facebook">
+											<input name="email" type="email" placeholder="Email"  required>
+											<input name="phonenumber" type="tel" placeholder="Số điện thoại"  required>
+											<input type="url" name="facebook" type="text" placeholder="Liên kết Facebook"  required>
 										</div>
 
 										<!-- Giới tính -->
@@ -97,12 +97,12 @@
 
 										<div class="field">
 											<label>Số CCCD/CMND</label>
-											<input type="text" name="CCCD"/>
+											<input type="text" name="CCCD"  required/>
 										</div>
 
 										<div class="field">
 											<label>Đơn vị học tập</label>
-											<input type="text" name="Study" placeholder="Trường, Khoa, Lớp"/>
+											<input type="text" name="Study" placeholder="Trường, Khoa, Lớp"  required/>
 										</div>
 
 
@@ -129,30 +129,93 @@
 
 										<div class="field">
 											<label>Đội tuyên truyền viên</label>
-											<input type="text" name="activies" placeholder="Đội Thanh niên vận động hiến máu Trường Đại học Công nghệ, ĐHQGHN"/>
-										</div>
+											<input type="text" name="activies" placeholder="Đội Thanh niên vận động hiến máu Trường Đại học Công nghệ, ĐHQGHN"  required/>
+										 </div>
 
 										<div class="field">
 											<label>Nơi ở hiện tại</label>
-											<input type="text" name="Address" placeholder="Trần Quốc Vượng, Dịch Vọng Hậu, Cầu Giấy, Hà Nội"/>
+											<input type="text" name="Address" placeholder="Trần Quốc Vượng, Dịch Vọng Hậu, Cầu Giấy, Hà Nội"  required/>
 										</div>
 
 										<!-- Bạn có ở Hà Nội vào tháng -->
+										<div class="field">
+											<label for="">Bạn có ở Hà Nội vào tháng 6 và tháng 7 không?</label>
+											<input type="text" name="stay" id="stay"  required>
+										</div>
 
 									</div>	
-
-										
 
 								
 									<!-- Gửi kết quả -->
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="submit" value="Gửi đơn" class="primary" /></li>
 										<li><input type="reset" value="Clear" /></li>
 									</ul>
 								</form>
-								
+
+								<div id="submit-success" style="display: contents;">Đã gửi thành công!</div>
+
+								<!-- <div id="submit-success" class="alert alert-success" role="alert">
+									Đơn đăng ký đã được ghi nhận!
+									<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									  	<span aria-hidden="true">&times;</span>
+									</button>
+								  </div> -->
 								  
+
+							<!-- <script>
+								const form = document.forms['contact-us'];
+								const successMessage = document.getElementById('submit-success');
+								const scriptURL = 'https://script.google.com/macros/s/AKfycbysof7VyQmgHYcMSrcCdTohKCeA7Tc9Li-2-LI83HDcJGPdT13HhKjYSMkQnS6qnbneuQ/exec';
+								
+								form.addEventListener('submit', e => {
+								  e.preventDefault();
+								  // Code gửi biểu mẫu tới server
+								  fetch(scriptURL, { method: 'post', body: new FormData(form)})
+									.then(response => {
+									  if (response.ok) {
+										// Nếu gửi thành công, hiển thị thông báo và ẩn nó sau khi đóng thông báo
+										successMessage.style.display = 'block';
+										successMessage.querySelector('.close').addEventListener('click', () => {
+										  successMessage.style.display = 'none';
+										});
+										form.reset();
+									  } else {
+										throw new Error('Gửi đơn thất bại');
+									  }
+									})
+									.catch(error => console.error(error));
+								});
+								
+							</script> -->
+
+
 								  <script>
+									const form = document.forms['contact-us']
+									const successMessage = document.getElementById('submit-success');
+									const scriptURL = 'https://script.google.com/macros/s/AKfycbysof7VyQmgHYcMSrcCdTohKCeA7Tc9Li-2-LI83HDcJGPdT13HhKjYSMkQnS6qnbneuQ/exec';
+								  
+									form.addEventListener('submit', e => {
+									  e.preventDefault();
+									  // Code gửi biểu mẫu tới server
+									  fetch(scriptURL, { method: 'post', body: new FormData(form)})
+										.then(response => {
+										  if (response.ok) {
+											// Nếu gửi thành công, hiển thị thông báo
+											successMessage.style.display = 'block';
+											form.reset();
+										  } else {
+											throw new Error('Gửi đơn thất bại');
+										  }
+										})
+										.catch(error => console.error(error));
+									});
+								  </script>
+								  
+								  
+
+								  <!-- <script> 
+							
 									const scriptURL = 'https://script.google.com/macros/s/AKfycbysof7VyQmgHYcMSrcCdTohKCeA7Tc9Li-2-LI83HDcJGPdT13HhKjYSMkQnS6qnbneuQ/exec'
 									const form = document.forms['contact-us']
 								  
@@ -162,7 +225,7 @@
 										.then(response => console.log('Success!', response))
 										.catch(error => console.error('Error!', error.message))
 									})
-								  </script>
+								  </script> -->
 
 					<!-- Contact -->
 					</section>
