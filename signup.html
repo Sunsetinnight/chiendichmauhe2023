@@ -190,27 +190,38 @@
 							</script> -->
 
 
-								  <script>
-									const form = document.forms['contact-us']
-									const successMessage = document.getElementById('submit-success');
-									const scriptURL = 'https://script.google.com/macros/s/AKfycbysof7VyQmgHYcMSrcCdTohKCeA7Tc9Li-2-LI83HDcJGPdT13HhKjYSMkQnS6qnbneuQ/exec';
-								  
-									form.addEventListener('submit', e => {
-									  e.preventDefault();
-									  // Code gửi biểu mẫu tới server
-									  fetch(scriptURL, { method: 'post', body: new FormData(form)})
-										.then(response => {
-										  if (response.ok) {
-											// Nếu gửi thành công, hiển thị thông báo
-											successMessage.style.display = 'block';
-											form.reset();
-										  } else {
-											throw new Error('Gửi đơn thất bại');
-										  }
-										})
-										.catch(error => console.error(error));
-									});
-								  </script>
+							<script>
+								const form = document.forms['contact-us'];
+								const successMessage = document.getElementById('submit-success');
+								const scriptURL = 'https://script.google.com/macros/s/AKfycbysof7VyQmgHYcMSrcCdTohKCeA7Tc9Li-2-LI83HDcJGPdT13HhKjYSMkQnS6qnbneuQ/exec';
+								
+								form.addEventListener('submit', e => {
+								  e.preventDefault();
+								  // Code gửi biểu mẫu tới server
+								  fetch(scriptURL, { method: 'post', body: new FormData(form)})
+									.then(response => {
+									  if (response.ok){
+										// Lưu trữ thông báo trong session storage
+										sessionStorage.setItem('successMessage', 'Đã gửi thành công!');
+										//Hiển thị thông báo
+										successMessage.style.display='block';
+										form.reset();
+									  } else {
+										throw new Error('Gửi đơn thất bại');
+									  }
+									})
+									.catch(error => console.error(error));
+								});
+								
+								// Kiểm tra xem có thông báo trong session storage hay không
+								if (sessionStorage.getItem('successMessage')) {
+								  // Ẩn thông báo
+								  successMessage.style.display = 'none';
+								  // Xóa thông báo khỏi session storage
+								  sessionStorage.removeItem('successMessage');
+								}
+							  </script>
+							  
 								  
 								  
 
