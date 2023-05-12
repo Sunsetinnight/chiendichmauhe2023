@@ -2937,22 +2937,53 @@ input, select, textarea {
 			transition: 0.5s ease;
 			cursor: pointer;
 		}
-		.wrapper img:hover {
+		
+
+
+		#team {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		  }
+		  
+		  .member {
+			text-align: center;
+			margin-bottom: 20px;
+		  }
+		  
+		  .member img {
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+			filter: grayscale(100%);
+			transition: 0.5s ease;
+			cursor: pointer;
+		  }
+		  
+		  .member h3 {
+			margin-top: 10px;
+		  }
+
+		  .member img:hover {
 			transform: scale(1.2);
 			filter: grayscale(0%);
 		}
-
-		.flex-container1 {
-			display: flex;
-			justify-content: space-between; /* Căn các phần tử theo khoảng cách ngang đều nhau */
-			align-items: center; /* Căn các phần tử theo trục dọc */
+		  
+		  @media (max-width: 768px) {
+			#team {
+			  flex-wrap: wrap;
+			}
+		  
+			.member {
+			  flex-basis: 50%;
+			}
 		  }
 		  
-		  .wrapper {
-			flex: 2; /* Chia đều không gian cho các phần tử */
+		  #team .member h3 {
+			font-family: 'Segoe UI', sans-serif;
+			font-size: 16px;
 		  }
 		  
-
 
 /* Spotlights */
 
