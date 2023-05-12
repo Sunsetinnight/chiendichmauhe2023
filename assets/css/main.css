@@ -2919,6 +2919,41 @@ input, select, textarea {
 			margin: 0 0 0.5em 0;
 		}
 
+/* Wrapper*/
+		.wrapper {
+			height: auto;
+			width: auto;
+			border-radius: 50%;
+			overflow: hidden;
+			border: 5px solid #113a6b;
+			padding: 20px;
+
+		}
+		.wrapper img {
+			height: 100%;
+			width: 100%;
+			border-radius: 50%;
+			filter: grayscale(100%);
+			transition: 0.5s ease;
+			cursor: pointer;
+		}
+		.wrapper img:hover {
+			transform: scale(1.2);
+			filter: grayscale(0%);
+		}
+
+		.flex-container1 {
+			display: flex;
+			justify-content: space-between; /* Căn các phần tử theo khoảng cách ngang đều nhau */
+			align-items: center; /* Căn các phần tử theo trục dọc */
+		  }
+		  
+		  .wrapper {
+			flex: 2; /* Chia đều không gian cho các phần tử */
+		  }
+		  
+
+
 /* Spotlights */
 
 	.spotlights {
