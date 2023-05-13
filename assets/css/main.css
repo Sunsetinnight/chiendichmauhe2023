@@ -1,5 +1,5 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic");
 
 /*
 	Forty by HTML5 UP
@@ -72,6 +72,14 @@ input, select, textarea {
 	appearance: none;
 }
 
+
+
+/* Sáng tạo */
+
+font-family: 'Great Vibes', cursive;
+
+
+
 /* Basic */
 
 	@-ms-viewport {
@@ -99,7 +107,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #242943;
+		background: #ffffff;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -116,7 +124,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: #ffffff;
+		color: #202124;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 17pt;
 		font-weight: 300;
@@ -160,11 +168,11 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #9bf1ff !important;
+			color: #ffbb01 !important;
 		}
 
 		a:active {
-			color: #53e3fb !important;
+			color: #ffffff !important;
 		}
 
 	strong, b {
@@ -181,10 +189,10 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #202124;
 		font-weight: 600;
 		line-height: 1.65;
-		margin: 0 0 1em 0;
+		margin: 0 0 1e0m 0;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1784,7 +1792,7 @@ input, select, textarea {
 
 			header.major > :first-child:after {
 				content: '';
-				background-color: #ffffff;
+				background-color: #202124;
 				display: block;
 				height: 2px;
 				margin: 0.325em 0 0.5em 0;
@@ -1890,11 +1898,11 @@ input, select, textarea {
 		}
 
 	label {
-		color: #ffffff;
+		color: #202124;
 		display: block;
 		font-size: 0.8em;
 		font-weight: 600;
-		letter-spacing: 0.1em;
+		letter-spacing: 0em;
 		margin: 0 0 1em 0;
 		text-transform: uppercase;
 	}
@@ -1911,8 +1919,8 @@ input, select, textarea {
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: rgba(212, 212, 255, 0.035);
-		border: none;
+		background: rgba(249, 154, 0, 0.75);
+		border: 0;
 		border-radius: 0;
 		color: inherit;
 		display: block;
@@ -1931,6 +1939,7 @@ input, select, textarea {
 		select:invalid,
 		textarea:invalid {
 			box-shadow: none;
+			animation: shake .15s ease-in-out 0s;
 		}
 
 		input[type="text"]:focus,
@@ -1941,8 +1950,8 @@ input, select, textarea {
 		input[type="url"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #9bf1ff;
-			box-shadow: 0 0 0 2px #9bf1ff;
+			border-color: #ff0000;
+			box-shadow: 0 0 0 1px #ff0000;
 		}
 
 	select {
@@ -1956,8 +1965,8 @@ input, select, textarea {
 	}
 
 		select option {
-			color: #ffffff;
-			background: #242943;
+			color: #202124;
+			background: #ffffff;
 		}
 
 		select:focus::-ms-value {
@@ -1999,7 +2008,7 @@ input, select, textarea {
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;
-			color: #ffffff;
+			color: #dc4545;
 			cursor: pointer;
 			display: inline-block;
 			font-weight: 300;
@@ -2041,7 +2050,7 @@ input, select, textarea {
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
 			background: #ffffff;
-			border-color: #9bf1ff;
+			border-color: #9b03e7;
 			content: '\f00c';
 			color: #242943;
 		}
@@ -2074,6 +2083,31 @@ input, select, textarea {
 		color: rgba(244, 244, 255, 0.2) !important;
 		opacity: 1.0;
 	}
+
+	@keyframes shake {
+		0% { margin-left: 0;}
+		25% { margin-left: -5px;}
+		75% {margin-left: 5px;}
+		100% {margin-left: 0px;}
+	}
+
+	.video-container {
+		display: flex;
+		justify-content: center;
+		position: relative;
+		/* border-radius: 2%; */
+        width: 100%;
+        padding-bottom: 56.25%; /* Tỉ lệ khung hình 16:9 */
+        overflow: hidden;
+	  }
+	  .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+	  
 
 /* Box */
 
@@ -2287,6 +2321,11 @@ input, select, textarea {
 			vertical-align: middle;
 		}
 
+		ul.actions button {
+			padding: 0 0 0 1em;
+			background-color: pink;
+		}
+
 		ul.actions.special {
 			-moz-justify-content: center;
 			-webkit-justify-content: center;
@@ -2398,7 +2437,7 @@ input, select, textarea {
 
 				ul.pagination li > .page.active {
 					background-color: #ffffff;
-					color: #242943;
+					color: #ffffff;
 				}
 
 					ul.pagination li > .page.active:hover {
@@ -2407,7 +2446,7 @@ input, select, textarea {
 					}
 
 					ul.pagination li > .page.active:active {
-						background-color: #53e3fb;
+						background-color: #428eff;
 					}
 
 			ul.pagination li:first-child {
@@ -2515,9 +2554,9 @@ input, select, textarea {
 		transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		background-color: transparent;
 		border: 0;
-		border-radius: 0;
-		box-shadow: inset 0 0 0 2px #ffffff;
-		color: #ffffff;
+		border-radius: 40px;
+		box-shadow: inset 0 0 0 2px #202124;
+		color: #202124;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8em;
@@ -2530,7 +2569,10 @@ input, select, textarea {
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;
+		overflow: hidden;
+	
 	}
+	  
 
 		input[type="submit"]:hover, input[type="submit"]:active,
 		input[type="reset"]:hover,
@@ -2541,8 +2583,8 @@ input, select, textarea {
 		button:active,
 		.button:hover,
 		.button:active {
-			box-shadow: inset 0 0 0 2px #9bf1ff;
-			color: #9bf1ff;
+			box-shadow: inset 0 0 0 2px #eb0909;
+			color: #eb0909;
 		}
 
 		input[type="submit"]:active,
@@ -2551,8 +2593,8 @@ input, select, textarea {
 		button:active,
 		.button:active {
 			background-color: rgba(155, 241, 255, 0.1);
-			box-shadow: inset 0 0 0 2px #53e3fb;
-			color: #53e3fb;
+			box-shadow: inset 0 0 0 2px #ff0000;
+			color: #ffbb01;
 		}
 
 		input[type="submit"].icon:before,
@@ -2671,7 +2713,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #ffffff;
+			background-color: #ffbb01;
 			box-shadow: none;
 			color: #242943;
 		}
@@ -2685,7 +2727,7 @@ input, select, textarea {
 			button.primary:active,
 			.button.primary:hover,
 			.button.primary:active {
-				background-color: #9bf1ff;
+				background-color: red;
 				color: #242943 !important;
 			}
 
@@ -2694,7 +2736,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #53e3fb;
+				background-color: #ff0000;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -3004,7 +3046,7 @@ input, select, textarea {
 			-webkit-flex-direction: row;
 			-ms-flex-direction: row;
 			flex-direction: row;
-			background-color: #2e3450;
+			background-color: #ffbb01;
 		}
 
 			.spotlights > section > .image {
@@ -3066,7 +3108,8 @@ input, select, textarea {
 				-webkit-flex-direction: row-reverse;
 				-ms-flex-direction: row-reverse;
 				flex-direction: row-reverse;
-				background-color: #333856;
+				background-color: #428eff;
+				border-color: #202124;
 			}
 
 				.spotlights > section:nth-child(2n) > .content {
@@ -3180,7 +3223,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #2a2f4a;
+		background-color: #ffbb01;
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
 		cursor: default;
 		font-weight: 600;
@@ -3223,7 +3266,7 @@ input, select, textarea {
 			}
 
 			#header .logo:active strong {
-				background-color: #53e3fb;
+				background-color: #428eff;
 			}
 
 		#header nav {
@@ -3476,7 +3519,7 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			pointer-events: none;
-			background-color: #242943;
+			background-color: #d2c100;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3756,8 +3799,19 @@ input, select, textarea {
 
 /* Main */
 
+
+	#main2 {
+	background-color: #ffbb01;
+
+
+}
+	#main1 {
+		background-color: #ffffff;
+
+	}
+
 	#main {
-		background-color: #09417cb3;
+		background-color: #ffffff;
 		
 		
 	}
@@ -3796,6 +3850,7 @@ input, select, textarea {
 	#contact {
 		border-bottom: solid 1px rgba(156, 7, 4, 0.1);
 		overflow-x: hidden;
+		background-color: #428eff;
 	}
 
 		#contact > .inner {
@@ -3876,6 +3931,9 @@ input, select, textarea {
 		}
 
 /* Footer */
+		#footer {
+		background-color: #202124;
+		}
 
 	#footer .copyright {
 		font-size: 0.8em;
