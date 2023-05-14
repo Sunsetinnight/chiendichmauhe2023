@@ -1919,15 +1919,15 @@ font-family: 'Great Vibes', cursive;
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: rgba(249, 154, 0, 0.75);
-		border: 0;
-		border-radius: 0;
+		background: rgb(255, 187, 1);
+		border-radius: 0.5rem;
 		color: inherit;
 		display: block;
 		outline: 0;
 		padding: 0 1em;
 		text-decoration: none;
 		width: 100%;
+		border: 1px solid:rgba(0, 0, 0, 0.15);
 	}
 
 		input[type="text"]:invalid,
@@ -1950,8 +1950,8 @@ font-family: 'Great Vibes', cursive;
 		input[type="url"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #ff0000;
-			box-shadow: 0 0 0 1px #ff0000;
+			border-color: #ffbb01;
+			box-shadow: 0 0 0 1px #ffbb01;
 		}
 
 	select {
@@ -3801,8 +3801,8 @@ font-family: 'Great Vibes', cursive;
 
 
 	#main2 {
-	background-color: #ffbb01;
-
+	background-color: #428eff
+	
 
 }
 	#main1 {
