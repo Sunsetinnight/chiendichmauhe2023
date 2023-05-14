@@ -1802,7 +1802,7 @@ font-family: 'Great Vibes', cursive;
 		header.major > p {
 			font-size: 0.7em;
 			font-weight: 600;
-			letter-spacing: 0.25em;
+			letter-spacing: 0;
 			margin-bottom: 0;
 			text-transform: uppercase;
 		}
@@ -2556,11 +2556,11 @@ font-family: 'Great Vibes', cursive;
 		-webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-		background-color: transparent;
+		background-color: red;
 		border: 0;
 		border-radius: 30px;
 		box-shadow: inset 0 0 0 2px #202124;
-		color: #202124;
+		color: #ffffff;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8em;
@@ -2587,7 +2587,7 @@ font-family: 'Great Vibes', cursive;
 		button:active,
 		.button:hover,
 		.button:active {
-			box-shadow: inset 0 0 0 2px #eb0909;
+			box-shadow: inset 0 0 0 2px #ffffff;
 			color: #eb0909;
 		}
 
@@ -2597,8 +2597,8 @@ font-family: 'Great Vibes', cursive;
 		button:active,
 		.button:active {
 			background-color: rgba(155, 241, 255, 0.1);
-			box-shadow: inset 0 0 0 2px #ff0000;
-			color: #ffbb01;
+			box-shadow: inset 0 0 0 2px #2e2d2d;
+			color: #ffffff;
 		}
 
 		input[type="submit"].icon:before,
@@ -3237,7 +3237,7 @@ font-family: 'Great Vibes', cursive;
 		font-weight: 600;
 		height: 3.25em;
 		left: 0;
-		letter-spacing: 0.25em;
+		letter-spacing: 0.1rem;
 		line-height: 3.25em;
 		margin: 0;
 		position: fixed;
@@ -3270,11 +3270,11 @@ font-family: 'Great Vibes', cursive;
 			}
 
 			#header .logo:hover strong {
-				background-color: #9bf1ff;
+				background-color: #d15353;
 			}
 
 			#header .logo:active strong {
-				background-color: #428eff;
+				background-color: #fdfeff;
 			}
 
 		#header nav {
@@ -3467,6 +3467,7 @@ font-family: 'Great Vibes', cursive;
 		@media screen and (max-width: 480px) {
 
 			#header .logo span {
+				background-color: #ffffff;
 				display: none;
 			}
 
