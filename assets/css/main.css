@@ -3031,7 +3031,7 @@ font-family: 'Great Vibes', cursive;
 		  
 		  #team .member h3 {
 			font-family: 'Segoe UI', sans-serif;
-			font-size: 15px;
+			font-size: 14px;
 		  }
 		  
 
@@ -3528,7 +3528,7 @@ font-family: 'Great Vibes', cursive;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			pointer-events: none;
-			background-color: #d2c100;
+			background-color: #f3e65a;
 			content: '';
 			display: block;
 			height: 100%;
