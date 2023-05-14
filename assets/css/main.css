@@ -74,10 +74,6 @@ input, select, textarea {
 
 
 
-/* Sáng tạo */
-
-font-family: 'Great Vibes', cursive;
-
 
 
 /* Basic */
@@ -1931,7 +1927,7 @@ font-family: 'Great Vibes', cursive;
 		text-decoration: none;
 		width: 100%;
 		border: 0.2rem solid: rgba(36, 41, 67, 0.1); 
-	  }
+	  		}
 
 		input[type="text"]:invalid,
 		input[type="password"]:invalid,
@@ -3071,12 +3067,14 @@ font-family: 'Great Vibes', cursive;
 		}
 
 			.spotlights > section > .image {
-				background-position: center center;
-				background-size: cover;
+				background-position: center;
+				background-size: auto;
 				border-radius: 0;
 				display: block;
 				position: relative;
-				width: 30%;
+				width: 50%;
+				height: fit-content;
+				
 			}
 
 				.spotlights > section > .image img {
@@ -3511,7 +3509,7 @@ font-family: 'Great Vibes', cursive;
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url("../../images/banner.jpg");
+		background-image: url("/images/banner.jpg");
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3751,6 +3749,9 @@ font-family: 'Great Vibes', cursive;
 		display: inline-block;
 		margin-left: 4em;
 		padding: 0.65em;
+		width: 100%;
+		height:auto;
+		
 		border-radius: 100%;
 		border: solid 1px;
 	}
