@@ -12,6 +12,7 @@
 		<meta property="og:image" content="https://photos.app.goo.gl/WY9Yzj9Bk6ezKyKQ6">
 		<meta property="og:url" content="URL_trang_web">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="shortcut icon" type="image/x-icon" href="images/favicon(1).ico">
 		<link rel="icon" type="image/x-icon" href="images/apple-touch-icon.png">
@@ -19,6 +20,7 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+
 		<div id="wrapper">
 				<header id="header" class="alt">
 					<a href="index.html" class="logo"><strong>CHIẾN DỊCH HÈ 2023</strong> <span>Gieo nhân ái - Gặt tiến bộ</span></a>
@@ -86,8 +88,7 @@
 									<header><h2></h2></header>
 								</div>
 						</div>
-							  
-							  
+							  	  
 
 						<!-- Two -->
 							<section id="two" class="spotlights">
@@ -157,11 +158,11 @@
 							</section>
 							  
 							<div class="grid">
-								<a class="item">
-									<img src="images/BCH/hvd.png" alt="Hoang Van Duong">
-									<div class="name">HOÀNG VĂN DƯƠNG</div>
-									<div class="position">Tổng chỉ huy</div>
-									<div class="pronouns"></div>
+								<a class="item" onclick="showPopup('Người bi quan thấy khó khăn ở mọi cơ hội. Người lạc quan thấy cơ hội ở mọi khó khăn.', 'Tổng chỉ huy')">
+								  <img src="images/BCH/hvd.png" alt="Hoang Van Duong">
+								  <div class="name">HOÀNG VĂN DƯƠNG</div>
+								  <div class="position">Tổng chỉ huy</div>
+								  <div class="pronouns"></div>
 								</a>
 								<a class="item">
 									<img src="images/BCH/nms.jpg" alt="Nguyen Minh Son">
@@ -188,7 +189,39 @@
 									<div class="pronouns">Công tác Kiểm tra - Kỷ luật</div>
 								</a>
 							</div>
+
+							<div id="popup" class="popup">
+								<div id="popup-content"></div>
+							  </div>
 							  
+							  <script>
+							function showPopup(name, position) {
+								var popup = document.getElementById('popup');
+								var popupContent = document.getElementById('popup-content');
+								popupContent.textContent = 'Gửi bạn lời này nhé: ' + name;
+
+								var closeButton = popup.querySelector('.popup-close-button');
+								if (!closeButton) {
+									closeButton = document.createElement('button');
+									closeButton.textContent = 'Close';
+									closeButton.classList.add('popup-close-button');
+									closeButton.addEventListener('click', function() {
+									popup.style.display = 'none';
+									});
+
+									popup.appendChild(closeButton);
+								}
+
+								popup.style.display = 'block';
+								}
+
+
+							  </script>
+							
+							  
+	
+
+
 
 						<!-- Two -->
 						<section id="main2">
