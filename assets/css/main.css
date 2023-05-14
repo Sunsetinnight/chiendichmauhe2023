@@ -2993,7 +2993,7 @@ font-family: 'Great Vibes', cursive;
 		  }
 		  
 		  .item {
-			flex-basis: 208px;
+			flex-basis: 225px;
             height: 270px;
 			padding: 1rem;
 			box-sizing: border-box;
@@ -3609,7 +3609,7 @@ font-family: 'Great Vibes', cursive;
 				#banner > .inner .content p {
 					font-size: 0.9em;
 					font-weight: 600;
-					letter-spacing: 0.1em;
+					letter-spacing: 0;
 					text-transform: none;
 				}
 
