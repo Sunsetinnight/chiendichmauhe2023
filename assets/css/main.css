@@ -2991,6 +2991,10 @@ font-family: 'Great Vibes', cursive;
 			justify-content: space-around;
 			align-items: center;
 		  }
+
+		  .border-transparent {
+			border-color: transparent;
+		  }
 		  
 		  .member {
 			text-align: center;
@@ -3001,7 +3005,7 @@ font-family: 'Great Vibes', cursive;
 			width: 150px;
 			height: 150px;
 			border-radius: 50%;
-			filter: grayscale(100%);
+			filter: grayscale(0%);
 			transition: 0.5s ease;
 			cursor: pointer;
 		  }
@@ -3805,8 +3809,7 @@ font-family: 'Great Vibes', cursive;
 
 
 	#main2 {
-	background-color: #e03a08
-	
+	background-color: #ffffff;
 
 }
 	#main1 {
@@ -4030,7 +4033,7 @@ font-family: 'Great Vibes', cursive;
 		-ms-justify-content: center;
 		justify-content: center;
 		pointer-events: none;
-		background: rgba(36, 41, 67, 0.9);
+		background: rgba(3, 3, 43, 0.466);
 		box-shadow: none;
 		height: 100%;
 		left: 0;
