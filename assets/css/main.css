@@ -1930,7 +1930,7 @@ font-family: 'Great Vibes', cursive;
 		padding: 0 1em;
 		text-decoration: none;
 		width: 100%;
-		border: 0;
+		border: 0.2rem solid: rgba(36, 41, 67, 0.1); 
 	}
 
 		input[type="text"]:invalid,
