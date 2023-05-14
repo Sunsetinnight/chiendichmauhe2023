@@ -1855,10 +1855,13 @@ font-family: 'Great Vibes', cursive;
 				-webkit-flex-shrink: 0;
 				-ms-flex-shrink: 0;
 				flex-shrink: 0;
-				padding: 1.5em 0 0 1.5em;
+				padding: 1.5em 2em 2em 1.5em;
 				width: calc(100% - 1.5em);
 			}
-
+			.field input,
+			.field label {
+  				margin-bottom: 10px;
+}
 				form > .fields > .field.half {
 					width: calc(50% - 0.75em);
 				}
@@ -2268,6 +2271,7 @@ font-family: 'Great Vibes', cursive;
 		list-style: disc;
 		margin: 0 0 2em 0;
 		padding-left: 1em;
+
 	}
 
 		ul li {
