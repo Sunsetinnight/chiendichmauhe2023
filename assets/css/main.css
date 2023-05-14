@@ -2984,7 +2984,7 @@ font-family: 'Great Vibes', cursive;
 			cursor: pointer;
 		}
 		
-
+/* Header */
 		.grid {
 			display: flex;
 			justify-content: space-around;
@@ -3032,10 +3032,16 @@ font-family: 'Great Vibes', cursive;
 			margin-top: 0.25rem;
 			font-size: small;
 		  }
+
+		  @media screen and (max-width: 480px) {
+			.item {
+			  flex-basis: 45%;
+			  max-width: 208px;
+			  height: auto;
+			}
+		}
 		  
-		  
-		  
-		  
+	
 		
 		
 		
