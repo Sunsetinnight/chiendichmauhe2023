@@ -1,5 +1,5 @@
 const popUp = document.querySelector(".pop-up");
-const acceptBtn = document.getElementById("accept-btn");
+const acceptBtn = document.getElementById("accept-btn1");
 
 function show() {
   popUp.classList.add("opened-popup");
