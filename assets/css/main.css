@@ -2105,11 +2105,14 @@ input, select, textarea {
         width: 100%;
         padding-bottom: 56.25%; /* Tỉ lệ khung hình 16:9 */
         overflow: hidden;
+		align-items: start;
 	  }
 	  .video-container iframe {
         position: absolute;
         top: 0;
-        left: 0;
+        left: 0x;
+		right: 0px;
+		padding-bottom: 30px;
         width: 100%;
         height: 100%;
     }
