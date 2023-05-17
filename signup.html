@@ -2,10 +2,10 @@
 
 <html>
 	<head>
-		<title> Chiến dịch hiến máu Mùa hè tình nguyện 2023</title>
+		<title>Chiến dịch hiến máu Mùa hè tình nguyện 2023</title>
 		<meta charset="utf-8" />
 		<meta name="description" content="Tuyển chiến sĩ hè - Chiến dịch Mùa hè tình nguyện 2023">
-
+		
 		<!-- Thẻ meta cho Facebook -->
 		<meta property="og:title" content="TUYỂN CHIẾN SĨ CHIẾN DỊCH MÁU HÈ 2023">
 		<meta property="og:description" content="Chiến dịch hiến máu Mùa hè tình nguyện 2023 quay trở lại với nhiều....">
@@ -13,12 +13,20 @@
 		<meta property="og:url" content="URL_trang_web">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		
+		<!-- Các đường dẫn đến các tệp CSS của SweetAlert2 -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+		
+		<!-- Các đường dẫn đến các tệp JavaScript của SweetAlert2 -->
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+		
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="shortcut icon" type="image/x-icon" href="images/favicon(1).ico">
 		<link rel="icon" type="image/x-icon" href="images/apple-touch-icon.png">
 		<link rel="icon" type="image/x-icon" href="images/android-chrome-512x512.png">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
+	  </head>
+	  
 	<body class="is-preload">
 		<div id="wrapper">
 			<header id="header">
@@ -146,49 +154,63 @@
 								
 							       <!-- Gửi kết quả -->
 									<ul class="actions">
-										<li><input id="submitBtn" type="submit" value="Gửi đơn" class="primary" /></li>
+										<li><input id="submitBtn" type="submit" value="Gửi đơn" class="primary" onclick="showPopup('Người bi quan thấy khó khăn ở mọi cơ hội. Người lạc quan thấy cơ hội ở mọi khó khăn.', 'Tổng chỉ huy')" /></li>
 										<li><input type="reset" value="Clear" /></li>
 									</ul>
 								</form>
 
-
-								<div id="submit-success" style="display: none;">Đã gửi thành công!</div>
-
 							
-							<script>
-								const form = document.forms['contact-us'];
-								const successMessage = document.getElementById('submit-success');
-								const submitBtn = document.getElementById('submitBtn');
-								const scriptURL = 'https://script.google.com/macros/s/AKfycbysof7VyQmgHYcMSrcCdTohKCeA7Tc9Li-2-LI83HDcJGPdT13HhKjYSMkQnS6qnbneuQ/exec';
+								<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+								<script>
+								  const form = document.forms['contact-us'];
+								  const successMessage = document.getElementById('submit-success');
+								  const submitBtn = document.getElementById('submitBtn');
+								  const scriptURL = 'https://script.google.com/macros/s/AKfycbysof7VyQmgHYcMSrcCdTohKCeA7Tc9Li-2-LI83HDcJGPdT13HhKjYSMkQnS6qnbneuQ/exec';
 								
-								form.addEventListener('submit', e => {
-								  e.preventDefault();
-								  // Code gửi biểu mẫu tới server
-								  fetch(scriptURL, { method: 'post', body: new FormData(form)})
-									.then(response => {
-									  if (response.ok){
-										// Lưu trữ thông báo trong session storage
-										sessionStorage.setItem('successMessage', 'Đã gửi thành công!');
-										//Hiển thị thông báo
-										successMessage.style.display='block';
-										form.reset();
-									  } else {
-										throw new Error('Gửi đơn thất bại');
-									  }
-									})
-									.catch(error => console.error(error));
+								 let formSubmitted = false;
+
+								  form.addEventListener('submit', e => {
+									e.preventDefault();
+									if (formSubmitted) {
+										// Hiển thị thông báo nếu người dùng cố gắng gửi lại biểu mẫu
+										Swal.fire({
+										title: 'Thông báo',
+										text: 'Bạn đã gửi thành công biểu mẫu.',
+										icon: 'warning',
+										confirmButtonText: 'Đồng ý'
+										});
+										
+										return; // Không thực hiện xử lý nếu biểu mẫu đã được gửi
+									}
+									
+									formSubmitted = true;
+									// Code gửi biểu mẫu tới server
+									fetch(scriptURL, { method: 'post', body: new FormData(form) })
+									  .then(response => {
+										if (response.ok) {
+										  // Hiển thị popup thành công
+										  Swal.fire({
+											icon: 'success',
+											title: 'Thành công!',
+											text: 'Dữ liệu đã được gửi thành công!',
+										  });
+										  form.reset();
+										} else {
+										  throw new Error('Gửi đơn thất bại');
+										}
+									  })
+									  .catch(error => console.error(error));
 									submitBtn.classList.add('success');
-								});
+								  });
+								  // Kiểm tra xem biểu mẫu đã được gửi thành công hay chưa
+									if (sessionStorage.getItem('successMessage')) {
+									successMessage.style.display = 'block'; // Hiển thị thông báo thành công
+									
+									// Vô hiệu hóa nút submit
+									submitBtn.disabled = true;
+									}
+								</script>
 								
-								// Kiểm tra xem có thông báo trong session storage hay không
-								if (sessionStorage.getItem('successMessage')) {
-								  // Ẩn thông báo
-								  successMessage.style.display = 'none';
-								  // Xóa thông báo khỏi session storage
-								  sessionStorage.removeItem('successMessage');
-								}
-						
-							  </script>
 
 					</section>
 			</section>
