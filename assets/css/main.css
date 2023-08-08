@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #fff;
+		background: #ffffff;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -98,10 +98,10 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #a2a2a2;
+		color: #000000;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 16pt;
-		font-weight: 400;
+		font-size: 18pt;
+		font-weight: 500;
 		line-height: 1.75em;
 	}
 
@@ -122,8 +122,8 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #787878;
-		font-weight: 400;
+		color: #000000;
+		font-weight: 600;
 	}
 
 	em, i {
@@ -135,8 +135,8 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #787878;
-		font-weight: 400;
+		color: #000000;
+		font-weight: 600;
 		line-height: 1em;
 		margin: 0 0 1em 0;
 	}
@@ -1765,7 +1765,7 @@ input, select, textarea {
 	}
 
 	header p {
-		color: #b2b2b2;
+		color: #000000;
 		position: relative;
 		margin: 0 0 1.5em 0;
 	}
@@ -1801,10 +1801,10 @@ input, select, textarea {
 	}
 
 	label {
-		color: #787878;
+		color: #000000;
 		display: block;
-		font-size: 0.9em;
-		font-weight: 400;
+		font-size: 1.0em;
+		font-weight: 500;
 		margin: 0 0 1em 0;
 	}
 
@@ -1812,6 +1812,7 @@ input, select, textarea {
 	input[type="password"],
 	input[type="email"],
 	input[type="url"],
+	input[type="date"],
 	select,
 	textarea {
 		-moz-appearance: none;
@@ -1832,6 +1833,8 @@ input, select, textarea {
 		input[type="text"]:invalid,
 		input[type="password"]:invalid,
 		input[type="email"]:invalid,
+		input[type="url"]:invalid,
+		input[type="date"]:invalid,
 		select:invalid,
 		textarea:invalid {
 			box-shadow: none;
@@ -1840,9 +1843,11 @@ input, select, textarea {
 		input[type="text"]:focus,
 		input[type="password"]:focus,
 		input[type="email"]:focus,
+		input[type="url"]:focus,
+		input[type="date"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #49bf9d;
+			border-color: #f7ce02;
 		}
 
 	select {
@@ -1856,8 +1861,8 @@ input, select, textarea {
 	}
 
 		select option {
-			color: #787878;
-			background: #fff;
+			color: #000000;
+			background: #fffefb;
 		}
 
 		select:focus::-ms-value {
@@ -1871,6 +1876,8 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="url"],
+	input[type="date"],
 	select {
 		height: 2.75em;
 	}
@@ -1896,7 +1903,7 @@ input, select, textarea {
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;
-			color: #a2a2a2;
+			color: #000000;
 			cursor: pointer;
 			display: inline-block;
 			font-size: 1em;
@@ -1982,7 +1989,7 @@ input, select, textarea {
 
 	.box {
 		border-radius: 0.35em;
-		border: solid 2px #efefef;
+		border: solid 2px #ff0000;
 		margin-bottom: 2em;
 		padding: 1.5em;
 	}
@@ -2446,7 +2453,7 @@ input, select, textarea {
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		background-color: transparent;
 		border-radius: 0.35em;
-		border: solid 3px #efefef;
+		border: solid 3px #ffcc00;
 		color: #787878 !important;
 		cursor: pointer;
 		display: inline-block;
@@ -2701,6 +2708,7 @@ input, select, textarea {
 				padding-top: 0;
 			}
 
+		
 /* Poptrox */
 
 	@-moz-keyframes spin {
