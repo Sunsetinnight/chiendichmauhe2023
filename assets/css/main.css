@@ -1823,7 +1823,7 @@ input, select, textarea {
 		font-size: 18px;
 		margin-top: 10px;
 		font-family: 'Sriracha', cursive;
-		font-size: large;
+		font-size: auto;
 	  }
 
 
