@@ -1802,6 +1802,7 @@ input, select, textarea {
 		position: relative;
 		overflow: hidden;
 		padding-bottom: 56.25%; /* Tỷ lệ 16:9 */
+		 box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Bóng đổ phía sau */
 	  }
 	
 	  .video-container iframe {
