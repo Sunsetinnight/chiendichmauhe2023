@@ -1,302 +1,698 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Người Việt Trẻ - Vietnamese Youth 2023</title>
-		<meta charset="utf-8" />
-		<meta name="description" content="Tuyển tình nguyện viên - Người Việt Trẻ 2023">
+<!doctype html>
+<html lang="en">
 
-		<!-- Thẻ meta cho Facebook -->
-		<meta property="og:title" content="TUYỂN TÌNH NGUYỆN VIÊN NGƯỜI VIỆT TRẺ 2023">
-		<meta property="og:description" content="Người Việt Trẻ là một trong những ngày hội hiến máu lớn nhất TP. Hà Nội....">
-		<meta property="og:image" content="https://flic.kr/p/2oAuCv6">
-		<meta property="og:url" content="URL_trang_web">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		
-		<!-- Các đường dẫn đến các tệp CSS của SweetAlert2 -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-		
-		<!-- Các đường dẫn đến các tệp JavaScript của SweetAlert2 -->
-		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
-		
-		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-		<link rel="icon" type="image/x-icon" href="images/apple-touch-icon.png">
-		<link rel="icon" type="image/x-icon" href="images/android-chrome-512x512.png">
-		<link rel="stylesheet" href="assets/css/main.css" />
-		
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<head>
+  <!-- Required Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	</head>
+  <!-- Document Title, Description, and Author -->
+  <title>Youth Camp - Tự lập để trưởng thành</title>
+  <meta name="description" content="Trại huấn luyện kỹ năng thanh niên Youth Camp 2023">
+  <meta name="author" content="BootstrapBrain">
 
-	<body class="is-preload">
+  <!-- Favicon and Touch Icons -->
+  <link rel="icon" type="image/png" sizes="512x512" href="./assets/favicon/favicon-512x512.png">
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-					<!-- <h1><strong>I am Strata</strong>, a super simple<br />
-					responsive site template freebie<br />
-					crafted by <a href="http://html5up.net">HTML5 UP</a>.</h1> -->
-				</div> 
-			</header>
+  <!-- Google Fonts Files -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Playball&display=swap" rel="stylesheet">
+  
 
-		<!-- Main -->
-			<div id="main">
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="./assets/css/wave-bsb.css">
+</head>
 
-				<!-- One -->
-					<section id="one">
-						<header class="major" >
-							<h2 >Chào mừng bạn đến với chương trình hiến máu
-							Người Việt Trẻ 2023 💛💛</h2>
-							<style>
-								@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
-							  </style>
-						</header>
-					<div style="text-align: justify;">
-						<p>Ngày hội tình nguyện Người Việt Trẻ lần thứ XIII 2023 tự hào là một trong những chương trình hiến máu lớn nhất tháng 9 này dành cho giới trẻ trên khắp thủ đô. Trong nhiều năm qua, Người Việt Trẻ không những nhận được sự hưởng ứng của đông đảo các bạn sinh viên mà còn có được sức lan tỏa mạnh mẽ từ cộng đồng trên các phương tiện truyền thông đại chúng. <br> <br>
+<body data-bs-spy="scroll" data-bs-target="#bsb-tpl-navbar" data-bs-smooth-scroll="true" tabindex="0">
+  <!-- Header -->
+  <header id="header" class="sticky-top bsb-tpl-header-sticky bsb-tpl-header-sticky-animationX">
 
-							Với thông điệp “TÔI TRƯỞNG THÀNH” chương trình muốn tạo ra một môi trường lành mạnh cho các bạn trẻ trong thời đại mới để rèn luyện sự tự tin, dám mơ ước, dám thành công và sẵn sàng tỏa sáng thông qua các hoạt động sự kiện hấp dẫn của chương trình. Đặc biệt là khuyến khích các bạn trẻ luôn biết yêu thương, sẻ chia với cuộc sống bằng hành động ý nghĩa - Hiến máu cứu người, trở thành một nguồn cảm hứng cho toàn xã hội ngày càng văn minh, tiến bộ. <br> <br>
-							
-							Là hành trình dài mang theo những câu chuyện truyền cảm hứng, Người Việt Trẻ 2023 luôn chào đón bạn - những người trẻ có sức khỏe và sự nhiệt huyết, sẵn sàng trong việc tham gia hiến máu tình nguyện, và lan tỏa thông điệp nhân văn ấy đến với tất cả mọi người. <br> <br> 
-							
-							<B>👉 HÃY ĐỒNG HÀNH CÙNG NGƯỜI VIỆT TRẺ 2023 NGAY HÔM NAY.</B><br>
+    <!-- Navbar 1 - Bootstrap Brain Component -->
+    <nav id="scrollspyNav" class="navbar navbar-expand-lg bsb-tpl-bg-blue bsb-navbar bsb-navbar-hover bsb-navbar-caret bsb-tpl-navbar-sticky" data-bsb-sticky-target="#header">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/img/branding/logo.png" class="bsb-tpl-logo" alt="">
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul id="bsb-tpl-navbar" class="navbar-nav justify-content-end flex-grow-1">
+              <li class="nav-item">
+                <a class="nav-link active" href="#scrollspyNav" aria-current="page" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyServices" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar">Thông tin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyPortfolio" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar">Hình ảnh</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyTeam" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar">Đội ngũ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyPricing" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar">Phí tham dự</a>
+              </li>
 
-					<!-- video -->
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspySubmit" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar">Đăng ký</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyQuestion" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar">Câu hỏi</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-					<!-- Khung chứa video -->
-					<div class="video-container">
-							<iframe src="https://www.youtube.com/embed/Uhx0RMZXOis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
- 					</div>
+  </header>
 
-					 <div class="video-caption">
-						(Hành trình Người Việt Trẻ 2022 đầy rực rỡ)
-					  </div>
+  <!-- Hero 4 - Bootstrap Brain Component -->
+<section class="bg-primary">
+  <div class="container-fluid overflow-hidden">
+    <div class="row">
+      <div class="col-12 col-md-6 order-1 order-md-0 align-self-md-end">
+        <div class="row py-3 py-sm-5 py-xl-9 mt-md-5 justify-content-sm-center">
+          <div class="col-12 col-sm-10">
+            <h1 class="display-4 fw-bolder mb-6 text-white">Trại huấn luyện kỹ năng thanh niên
+              Youth Camp 2023</h1>
+            <div class="row">
+              <div class="col-12 col-xxl-8">
+                <p class="fs-5 mb-5 text-white">Youth Camp là mô hình trại huấn luyện được tổ chức nhằm phát triển kiến thức, kỹ năng sống và rèn luyện kỷ luật dành cho các bạn học sinh, sinh viên trên địa bản Thủ đô Hà Nội, được thiết kế bởi Hội Thanh niên vận động hiến máu Hà Nội - Tổ chức tình nguyện với gần 30 năm phát triển trong lĩnh vực tổ chức hiến máu và phát triển thanh niên.
+                </p>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 p-0">
+        <img class="img-fluid w-100 h-100 object-fit-cover" loading="lazy" src="./assets/img/hero/hero-home.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
 
-					  <style>
-						@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
-					  </style>
-					  <br>
-							<strong>QUYỀN LỢI KHI TRỞ THÀNH TÌNH NGUYỆN VIÊN</strong>
-							 <br>
-							
-							🏅 Được đào tạo các kỹ năng chuyên môn, kỹ năng mềm và tư duy sáng tạo <br>
-							
-							🏅 Được tham gia vào môi trường tình nguyện với tầm cỡ lớn và mô hình tổ chức chuyên nghiệp <br>
-							
-							🏅 Có cơ hội phát triển bản thân một cách toàn diện và xây dựng mối quan hệ rộng rãi <br>
-							
-							🏅 Biểu trưng/Giấy khen/Giấy chứng nhận từ Hội Thanh niên vận động hiến máu Hà Nội, BTC Chương trình Người Việt Trẻ... <br>
-							
-							🏅 Được tham gia những sự kiện hấp dẫn: Biggame, làm quà tặng bệnh nhi, xếp hình, thắp đuốc... <br>
-							
-							Và còn rất nhiều điều thú vị khác đang sẵn sàng chờ bạn khám phá!
-						</p>
-					</div>	
-						
-					</section>
+  <!-- Main -->
+  <main id="main">
 
+    <section id="scrollspyServices" class="py-5 py-xl-8 bsb-section-py-xxl-1">
 
+      <div class="container overflow-hidden">
+        <div class="row gy-5 gx-md-4 gy-lg-0 gx-xxl-5 ">
+          
+          <div class="col-11 col-sm-6 col-lg-4">
+            <div class="badge bsb-tpl-bg-yellow text-primary p-3 mb-4">
+              <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,600,0,0" />
+              <span class="material-symbols-outlined">
+                person_play
+                </span>
+            </div>
+            <h4 class="mb-3">Học viên</h4>
+            <p class="mb-3 text-secondary">Là học sinh, sinh viên từ 14 - 24 tuổi.</p>
+        
+          </div>
+          <div class="col-11 col-sm-6 col-lg-4">
+            <div class="badge bsb-tpl-bg-green text-primary p-3 mb-4">
 
-
-				<section id="three">
-						<h1 style="color: red; text-align: center; ">UI TIẾC QUÁ 😥😥 <br> THỜI GIAN MỞ ĐĂNG ĐĂNG KÝ TÌNH NGUYỆN VIÊN ĐÃ KẾT THÚC <br> <br></h1>
-						
-						
-	
-				
-				 <section id="three">
-						<!-- <h1 style="color: red; text-align: center; ">ĐĂNG KÝ TÌNH NGUYỆN VIÊN <br> CHƯƠNG TRÌNH HIẾN MÁU NGƯỜI VIỆT TRẺ 2023 <br> <br></h1> -->
-						<div class="row">
-							<div class="col-8 col-12-small">
-								
-								<img src="images/cute.jpg" alt="Ở đây là một điều siêu cute">
-								<p>Hãy theo dõi chúng mình tại Fanpage <a href="https://www.facebook.com/nguoiviettrevietnam">Người Việt Trẻ - Vietnamese Youth</a>.</p>
-								<p>Có bất kì băn khoăn gì hãy liên lạc với chúng mình nhé ^^.</p>
-								
-								
-								<!-- <form method="post" action="#" name="contact-us">
-									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Họ và tên" required /></div>
-										<div class="col-6 col-12-xsmall">
-											<select name="sex">
-												<option value="Nam">Nam</option>
-												<option value="Nữ">Nữ</option>
-											</select>
-										</div>
-										<div class="col-6 col-12-xsmall"><input type="text" name="phonenumber" id="email" placeholder="Số điện thoại" required /></div>
-										<div class="col-6 col-12-xsmall"><input type="url" name="email" id="email" placeholder="Liên kết Facebook cá nhân" required /></div>
-										<div class="col-6 col-12-xsmall">
-											<label for="date">Ngày sinh</label>
-											<input type="date" name="datebirth" id="date" placeholder="Ngày sinh" required /></div>
-										<div class="col-12">
-											<label for="study">Đơn vị học tập / Công tác</label>
-											<input type="text" name="Study"  placeholder="Trường, Khoa, Lớp / Tên công ty" required />
-										</div>
-
-										<div class="col-12">
-											<label for="education-level">Đơn vị hoạt động</label>
-											<select id="education-level" name="education-level" required>
-												<option value="liberty">Tình nguyện viên tự do</option>
-												<option value="MBC">Đội máu Báo chí</option>
-										  		<option value="MKT">Đội máu Kinh tế</option>
-										  		<option value="MSP">Đội máu Sư phạm</option>
-										  		<option value="ML">Đội máu Luật</option>
-										  		<option value="MNN">Đội máu Ngoại ngữ</option>
-										  		<option value="NVT">Đội máu Người Việt Trẻ</option>
-												<option value="chihoikhac">Đơn vị khác</option>
-											</select>
-									  	</div>
-
-										<div class="col-12">
-											<label>Địa chỉ thường trú</label>
-											<input type="text" name="Address" placeholder="Ex. 144 Xuân Thủy, Cầu Giấy, Hà Nội"  required/>
-										</div>
-
-										<div class="col-12">
-											<label for="realtime">Bạn có mặt tại Hà Nội trong khoảng thời gian 15/8 - 17/9</label>
-											<select name="realtime" id="sex-select">
-												<option value="Yes">Có</option>
-												<option value="No">Không</option>
-											</select>
-										</div>
+              <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,600,0,0" />
+              <span class="material-symbols-outlined">
+                calendar_clock
+                </span>
+            </div>
+            <h4 class="mb-3">Thời gian</h4>
+            <p class="mb-3 text-secondary">Từ ngày 11/10 - 13/10/2023 (cuối tuần).</p>
+            
+          </div>
+          <div class="col-11 col-sm-6 col-lg-4">
+            <div class="badge bsb-tpl-bg-pink text-primary p-3 mb-4">
+              <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,600,0,0" />
+              <span class="material-symbols-outlined">
+                location_on
+                </span>
+            </div>
+            <h4 class="mb-3">Địa điểm</h4>
+            <p class="mb-3 text-secondary">Trường Đại học Lao động - Xã hội cơ sở Sơn Tây.</p>
+            
+          </div>
+        </div>
+      </div>
+    </section>
 
 
-										<div class="col-12"> <label for="message">Bạn có câu hỏi hay gửi gắm gì tới chúng mình?</label><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-									</div>
+    <!-- Call To Action 1 - Bootstrap Brain Component -->
+    
+
+    <!-- Service 1 - Bootstrap Brain Component -->
 
 
-								
 
-								<ul class="actions" style="margin-top: 20px;">
-									<li><input id="submitBtn" type="submit" value="Gửi đơn" class="Primary" /></li>
-								</ul>	
+  
+    <section id="scrollspyAbout" class="bsb-tpl-bg-alice-blue py-5 py-xl-8 bsb-section-py-xxl-1">
+      <!-- FAQ 1 - Bootstrap Brain Component -->
+      <div class="container">
+        <div class="row gy-5 gy-lg-0 align-items-lg-center">
+          <div class="col-12 col-lg-6">
+            <img class="img-fluid rounded" loading="lazy" src="./assets/img/about/about-img-1.png" alt="">
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="row justify-content-xl-end">
+              <div class="col-12 col-xl-11">
+                <h2 class="display-5 fw-bolder mb-4">Những <mark class="bsb-tpl-highlight bsb-tpl-highlight-blue"><span class="bsb-tpl-font-hw display-3 text-accent fw-normal">kỹ năng</span></mark><br> bạn sẽ được trải nghiệm tại Youth Camp 2023.</h2>
+                <p class="fs-4 mb-5">Với kinh nghiệm gần 30 năm trong lĩnh vực đào tạo và phát triển thanh niên, Youth Camp 2023 tự tin mang đến cho các bạn những trải nghiệm hữu ích giúp bạn định nghĩa bản thân thông qua các hoạt động như vui chơi, giao lưu, học tập.</p>
+                <div class="accordion accordion-flush" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Kỹ năng tự lập
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Kỹ năng tự lập giúp bạn tự tin và chủ động trong mọi việc. Bạn sẽ không cần phải dựa dẫm vào người khác và có thể tự mình giải quyết các vấn đề của bản thân.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Tính kỉ luật
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Tính kỉ luật giúp bạn có thể làm chủ bản thân, tuân theo những nguyên tắc và khuôn khổ đã đề ra, vượt qua những cám dỗ và khó khăn, đạt được những mục tiêu và thành công mong muốn.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Kỹ năng giao tiếp
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Kỹ năng giao tiếp có vai trò rất quan trọng trong cuộc sống và công việc của mỗi người, vì nó giúp xây dựng quan hệ tốt, giải quyết vấn đề, tăng cường sự tự tin và khả năng lãnh đạo.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFore">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFore" aria-expanded="false" aria-controls="collapseThree">
+                        Kỹ năng quản lý thời gian
+                      </button>
+                    </h2>
+                    <div id="collapseFore" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Học cách sắp xếp, phân bổ và sử dụng thời gian một cách hiệu quả sẽ giúp bạn tăng năng suất, giảm áp lực, cân bằng cuộc sống và đạt được những mục tiêu mong muốn.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                        Kỹ năng làm việc nhóm
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Kỹ năng làm việc nhóm là một yếu tố then chốt để các bạn trẻ có thể phát triển bản thân và thích ứng với thời đại 4.0.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      
 
-								</form>
+    
+    </section>
 
-								<style>
-									/* CSS for adding red border on hover */
-									select:hover,
-									input[type="text"]:hover,
-									input[type="date"]:hover,
-									input[type="url"]:hover,
-									textarea:hover {
-									  border: 2px solid red;
-									}
-								  </style>
-								  
+    <!-- Section - Portfolio -->
+    <!-- Project 2 - Bootstrap Brain Component -->
+    <section id="scrollspyPortfolio" class="py-5 py-xl-8 bsb-section-py-xxl-1">
+      <div class="container mb-5 mb-md-6 mb-xl-10">
+        <div class="row justify-content-md-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-7 text-center">
+            <h2 class="display-6 fw-bolder mb-4">Cùng xem những <br><mark class="bsb-tpl-highlight bsb-tpl-highlight-yellow"><span class="bsb-tpl-font-hw display-3 text-accent fw-normal">khoảnh khắc</span></mark> tại Youth Camp.</h2>
+          </div>
+        </div>
+      </div>
 
-								<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-								<script>
-								  const form = document.forms['contact-us'];
-								  const successMessage = document.getElementById('submit-success');
-								  const submitBtn = document.getElementById('submitBtn');
-								  const scriptURL = 'https://script.google.com/macros/s/AKfycbysof7VyQmgHYcMSrcCdTohKCeA7Tc9Li-2-LI83HDcJGPdT13HhKjYSMkQnS6qnbneuQ/exec';
-								
-								 let formSubmitted = false;
+      <div class="container overflow-hidden">
+        <div class="row gy-2 g-md-2 g-xl-3 bsb-project-2-grid">
+          <div class="col-12 col-md-4 bsb-project-2-item">
+            <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
+              <a href="#!">
+                <img class="img-fluid bsb-scale-up bsb-hover-scale" loading="lazy" src="./assets/img/portfolio/project-landscape-1.jpg" alt="">
+              </a>
+              <figcaption>
+                <!-- <h3 class="text-white bsb-hover-fadeInLeft">Sinh hoạt lửa trại</h3> -->
+                <div class="text-white bsb-hover-fadeInRight">Lửa trại</div>
+              </figcaption>
+            </figure>
+          </div>
 
-								  form.addEventListener('submit', e => {
-									e.preventDefault();
-									if (formSubmitted) {
-										// Hiển thị thông báo nếu người dùng cố gắng gửi lại biểu mẫu
-										Swal.fire({
-										title: 'Thông báo',
-										text: 'Bạn đã gửi đơn đăng ký thành công. Vui lòng chỉ gửi một lần!',
-										icon: 'warning',
-										confirmButtonText: 'Đồng ý'
-										});
-										
-										return; // Không thực hiện xử lý nếu biểu mẫu đã được gửi
-									}
-									
-									formSubmitted = true;
-									// Code gửi biểu mẫu tới server
-									fetch(scriptURL, { method: 'post', body: new FormData(form) })
-									  .then(response => {
-										if (response.ok) {
-										  // Hiển thị popup thành công
-										  Swal.fire({
-											icon: 'success',
-											title: 'GỬI ĐƠN THÀNH CÔNG',
-											text: 'Người Việt Trẻ xin cảm ơn, vui lòng kiểm tra kết quả qua tin nhắn SMS sau thời gian mở đơn!',
-										  });
-										  form.reset();
-										} else {
-										  throw new Error('Gửi đơn thất bại');
-										}
-									  })
-									  .catch(error => console.error(error));
-									submitBtn.classList.add('success');
-								  });
-								  // Kiểm tra xem biểu mẫu đã được gửi thành công hay chưa
-									if (sessionStorage.getItem('successMessage')) {
-									successMessage.style.display = 'block'; // Hiển thị thông báo thành công
-									
-									// Vô hiệu hóa nút submit
-									submitBtn.disabled = true;
-									}
-								</script> -->
+          <div class="col-12 col-md-4 bsb-project-2-item">
+            <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
+              <a href="#!">
+                <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy" src="./assets/img/portfolio/project-portrait-1.jpg" alt="">
+              </a>
+              <!-- <figcaption>
+                <h3 class="text-white bsb-hover-fadeInUp">Red Lava</h3>
+                <div class="text-white bsb-hover-fadeInDown">Lửa trại</div>
+              </figcaption> -->
+            </figure>
+          </div>
 
-				
-							</div>
-							<div class="col-4 col-12-small">
-								<ul class="labeled-icons">
-									<li>
-										<h3 class="fab fa-facebook-f"><span class="label"></span></h3>
-										<a href="https://www.facebook.com/nguoiviettrevietnam/" target="_blank">Người Việt Trẻ - Vietnamese Youth</a>
-									</li>
-									<li>
-										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="mailto:nguoiviettre.hienmau@gmail.com">nguoiviettre.hienmau@gmail.com</a>
-									</li>
-									
-									<li>
-										<h3 class="icon solid fa-mobile-alt"><span class="label">Số điện thoại</span></h3>
-										039 309 7569 (Ms. Mỹ Hạnh)
-									</li>
-									
-									<li>
-										<h3 class="icon solid fa-home"><span class="label">Địa chỉ</span></h3>
-										P.609 tòa Trung tâm Máu Quốc gia<br />
-										Viện Huyết học - Truyền máu TW<br />
-										Phố Phạm Văn Bạch, Cầu Giấy, Hà Nội
-									</li>
-								</ul>
-							</div>
-						</div>
-					</section>
+          <div class="col-12 col-md-4 bsb-project-2-item">
+            <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
+              <a href="#!">
+                <img class="img-fluid bsb-scale-up bsb-hover-scale" loading="lazy" src="./assets/img/portfolio/project-landscape-2.jpg" alt="">
+              </a>
+              <!-- <figcaption>
+                <h3 class="text-white bsb-hover-fadeInLeft">Jungle Book</h3>
+                <div class="text-white bsb-hover-fadeInRight">Cảm xúc của các học viên</div>
+              </figcaption> -->
+            </figure>
+          </div>
 
-				
-			</div>
+          <div class="col-12 col-md-4 bsb-project-2-item">
+            <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
+              <a href="#!">
+                <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy" src="./assets/img/portfolio/project-portrait-2.jpg" alt="">
+              </a>
+              <!-- <figcaption>
+                <h3 class="text-white bsb-hover-fadeInUp">Wavy Road</h3>
+                <div class="text-white bsb-hover-fadeInDown">Adventure</div>
+              </figcaption> -->
+            </figure>
+          </div>
 
-	<!-- Footer -->
-	<footer id="footer">
-		<div class="inner">
-			<ul class="icons">
-				<li><a href="https://www.facebook.com/nguoiviettrevietnam" target="_blank" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-				<li><a href="https://www.youtube.com/@nguoiviettrevietnam" target="_blank" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
-				<li><a href="https://www.tiktok.com/@ch0601_hoimau" target="_blank" class="icon brands alt fa-tiktok"><span class="label">Tiktok</span></a></li>
-			</ul>
-			<ul class="copyright">
-				<li>&copy; 2023 Chi hội Thanh niên vận động hiến máu 06/01</li><li>Design: <a href="#">Kro</a></li>
-			</ul>
-		</div>
-	</footer>
+          <div class="col-12 col-md-4 bsb-project-2-item">
+            <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
+              <a href="#!">
+                <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy" src="./assets/img/portfolio/project-portrait-3.jpg" alt="">
+              </a>
+              <!-- <figcaption>
+                <h3 class="text-white bsb-hover-fadeInUp">Golden Leaves</h3>
+                <div class="text-white bsb-hover-fadeInDown">Photography</div>
+              </figcaption> -->
+            </figure>
+          </div>
 
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-		<script src="assets/js/jquery.poptrox.min.js"></script>
+          <div class="col-12 col-md-4 bsb-project-2-item">
+            <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
+              <a href="#!">
+                <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy" src="./assets/img/portfolio/project-portrait-4.jpg" alt="">
+              </a>
+              <!-- <figcaption>
+                <h3 class="text-white bsb-hover-fadeInUp">Minimal Notions</h3>
+                <div class="text-white bsb-hover-fadeInDown">Design</div>
+              </figcaption> -->
+            </figure>
+          </div>
 
-	</body>
+          <div class="col-12 col-md-4 bsb-project-2-item">
+            <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
+              <a href="#!">
+                <img class="img-fluid bsb-scale-up bsb-hover-scale" loading="lazy" src="./assets/img/portfolio/project-landscape-3.jpg" alt="">
+              </a>
+              <!-- <figcaption>
+                <h3 class="text-white bsb-hover-fadeInLeft">Bright Winks</h3>
+                <div class="text-white bsb-hover-fadeInRight">Design</div>
+              </figcaption> -->
+            </figure>
+          </div>
+
+          <div class="col-12 col-md-4 bsb-project-2-item">
+            <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
+              <a href="#!">
+                <img class="img-fluid bsb-scale-up bsb-hover-scale" loading="lazy" src="./assets/img/portfolio/project-landscape-4.jpg" alt="">
+              </a>
+              <!-- <figcaption>
+                <h3 class="text-white bsb-hover-fadeInLeft">Innovative Day</h3>
+                <div class="text-white bsb-hover-fadeInRight">Photography</div>
+              </figcaption> -->
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Section - Team -->
+    <!-- Team 1 - Bootstrap Brain Component -->
+    <section id="scrollspyTeam" class="py-5 py-xl-8 bsb-section-py-xxl-1">
+      <div class="container mb-5 mb-md-6 mb-xl-10">
+        <div class="row justify-content-md-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-7 text-center">
+            <h2 class="display-5 fw-bolder mb-4">Chúng tôi có đội ngũ <br><mark class="bsb-tpl-highlight bsb-tpl-highlight-yellow"><span class="bsb-tpl-font-hw display-3 text-accent fw-normal">Huấn luyện</span></mark> đầy kinh nghiệm, chuyên môn.</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="container overflow-hidden">
+        <div class="row gy-4 gy-lg-0 gx-xxl-5">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card border-0 border-bottom border-primary shadow-sm overflow-hidden">
+              <div class="card-body p-0">
+                <figure class="m-0 p-0">
+                  <img class="img-fluid" loading="lazy" src="./assets/img/team/team-img-1.jpg" alt="">
+                  <figcaption class="m-0 p-4">
+                    <h4 class="mb-1">Anh Trịnh Xuân Thủy</h4>
+                    <p class="text-secondary mb-0">Cử nhân Học viện Ngoại Giao <br>
+                      Thanh niên sống đẹp cấp Trung ương</p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card border-0 border-bottom border-primary shadow-sm overflow-hidden">
+              <div class="card-body p-0">
+                <figure class="m-0 p-0">
+                  <img class="img-fluid" loading="lazy" src="./assets/img/team/team-img-2.jpg" alt="">
+                  <figcaption class="m-0 p-4">
+                    <h4 class="mb-1">Anh Nguyễn Xuân Giáp</h4>
+                    <p class="text-secondary mb-0">Cử nhân Trường Đại học Mỏ - Địa chất</p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card border-0 border-bottom border-primary shadow-sm overflow-hidden">
+              <div class="card-body p-0">
+                <figure class="m-0 p-0">
+                  <img class="img-fluid" loading="lazy" src="./assets/img/team/team-img-3.jpg" alt="">
+                  <figcaption class="m-0 p-4">
+                    <h4 class="mb-1">Anh Nguyễn Anh Quân</h4>
+                    <p class="text-secondary mb-0">Cử nhân Học viện Báo chí và Tuyên truyền</p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card border-0 border-bottom border-primary shadow-sm overflow-hidden">
+              <div class="card-body p-0">
+                <figure class="m-0 p-0">
+                  <img class="img-fluid" loading="lazy" src="./assets/img/team/team-img-4.jpg" alt="">
+                  <figcaption class="m-0 p-4">
+                    <h4 class="mb-1">Chị Trương Thảo Linh</h4>
+                    <p class="text-secondary mb-0">Cử nhân Học viện Báo chí và Tuyên truyền</p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section - Pricing -->
+    <!-- Pricing 1 - Bootstrap Brain Component -->
+    <section id="scrollspyPricing" class="bsb-pricing-1 bsb-tpl-bg-sea-shell py-5 py-xl-8 bsb-section-py-xxl-1">
+      <div class="container">
+        <div class="row gy-5 gy-lg-0 align-items-center">
+          <div class="col-12 col-lg-4">
+            <h2 class="display-3 fw-bolder mb-4">Học phí <mark class="bsb-tpl-highlight bsb-tpl-highlight-yellow"><span class="bsb-tpl-font-hw display-1 text-accent fw-normal"></span></mark></h2>
+            <p class="fs-4 mb-4 mb-xl-5">Đăng ký ngay để nhận mức ưu đãi chỉ có tại khóa đầu tiên.</p>
+            <a href="#!" class="btn bsb-btn-2xl btn-primary rounded-pill">Đăng ký</a>
+          </div>
+          <div class="col-12 col-lg-8">
+            <div class="row right-content-xl-end">
+              <div class="col-12 col-xl-11">
+                <div class="row gy-4 gy-md-0 gx-xxl-5">
+                  <div class="col-12 col-md-10">
+                    <div class="card border-0 border-bottom border-primary shadow-sm">
+                      <div class="card-body p-4 p-xxl-5">
+                        
+                        <h5 class="display-5 fw-bold text-primary mb-2">550,000 VNĐ</h5>
+                        <p class="text-secondary mb-4">Người / Khóa</p>
+                        <ul class="list-group list-group-flush mb-4">
+                          <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                            </svg>
+                            <span><strong>450,000 VNĐ</strong> <br>Chi phí ăn uống, an ninh, vệ sinh</span>
+                          </li>
+                          <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                            </svg>
+                            <span><strong>100,000 VNĐ</strong> <br>Chi phí đồng phục khóa</span>
+                          </li>
+                          <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                            </svg>
+                            <span><strong>Miễn phí</strong> <br>Chi phí huấn luyện, hỗ trợ</span>
+                          </li>
+                          <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                            </svg>
+                            <span><strong>Miễn phí</strong> <br>Giấy chứng nhận khi hoàn thành</span>
+                          </li>
+                          
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="scrollspySubmit" class="bg-light py-3 py-md-5">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+            <h1 class="fs-1 text-secondary mb-2 text-uppercase text-center">ĐĂNG KÝ THAM GIA</h1>
+           
+            <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+          </div>
+        </div>
+      </div>
+    
+      <div class="container">
+        <div class="row gy-3 gy-md-4 gy-lg-0 align-items-xl-center">
+          <div class="col-12 col-lg-6">
+            <img class="img-fluid rounded" loading="lazy" src="./assets/img/contact/contact-1-2.JPG" alt="">
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="row justify-content-xl-center">
+              <div class="col-12 col-xl-11">
+                <div class="bg-white border rounded shadow-sm overflow-hidden">
+    
+                  <form action="#!">
+                    <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                      <div class="col-12">
+                        <label for="fullname" class="form-label">Họ và tên <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="fullname" name="fullname" value="" required>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <label for="" class="form-label">Giới tính <span class="text-danger">*</span></label>
+                        <div class="input-group">
+        
+                          <input type="text" class="form-control" id="email" name="email" value="" required>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <label for="phone" class="form-label">Số điện thoại</label>
+                        <div class="input-group">
+                          <span class="input-group-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                              <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                            </svg>
+                          </span>
+                          <input type="tel" class="form-control" id="phone" name="phone" value="">
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <label for="subject" class="form-label">Địa chỉ <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="subject" name="subject" value="" required>
+                      </div>
+                      <div class="col-12">
+                        <label for="subject" class="form-label">Đơn vị học tập/công tác <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="subject" name="subject" value="" required>
+                      </div>
+                      <div class="col-12">
+                        <label for="subject" class="form-label">Bạn biết đến YouthCamp qua đâu<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="subject" name="subject" value="" required>
+                      </div>
+                      <div class="col-12">
+                        <label for="message" class="form-label">Mong muốn của bạn khi tham gia Youth Camp 2023 <span class="text-danger">*</span></label>
+                        <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                      </div>
+                      <div class="col-12">
+                        <div class="d-grid">
+                          <button class="btn btn-primary btn-lg" type="submit">Đăng ký</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- NHỮNG CÂU HỎI THƯỜNG GẶP 1 - Bootstrap Brain Component -->
+<section id= "scrollspyQuestion" class="bg-light py-3 py-md-5 py-xl-8">
+  <div class="container">
+    <div class="row gy-5 gy-lg-0 align-items-lg-center">
+      <div class="col-12 col-lg-6">
+        <div class="col-12 col-xl-11">
+          <h3 class="mb-4">Câu hỏi về Youth Camp 2023</h3>
+          
+          <div class="accordion accordion-flush" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Những ai nên tham gia Youth Camp
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Morbi non dui tristique, porttitor tellus vitae, dapibus risus. Suspendisse eros erat, rhoncus sit amet lobortis vel, lacinia fermentum tortor. Sed nec pellentesque urna.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  How Does Payment System Work?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Morbi non dui tristique, porttitor tellus vitae, dapibus risus. Suspendisse eros erat, rhoncus sit amet lobortis vel, lacinia fermentum tortor. Sed nec pellentesque urna.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  How Do I Cancel My Account?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Morbi non dui tristique, porttitor tellus vitae, dapibus risus. Suspendisse eros erat, rhoncus sit amet lobortis vel, lacinia fermentum tortor. Sed nec pellentesque urna.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="row justify-content-xl-end">
+          <div class="col-12 col-xl-11">
+            <div class="widget">
+              <h3 class=" mb-4">Liên hệ</h3>
+              <address class="mb-4">Văn phòng Hội Máu Hà Nội, Tòa nhà Trung tâm Máu Quốc gia <br> Cầu Giấy, Hà Nội</address>
+              <p class="mb-1">
+                <a class="link-secondary text-decoration-none" href="tel:+15057922430">(84+) 96 688 82 41</a>
+              </p>
+              <p class="mb-0">
+                <a class="link-secondary text-decoration-none" href="mailto:demo@yourdomain.com">youthcamp.hn@gmail.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <!-- Footer 2 - Bootstrap Brain Component -->
+  <footer class="footer">
+
+    
+
+    <!-- Copyright - Bootstrap Brain Component -->
+    <div class="bg-light py-4 py-md-5 py-xl-8 border-top border-light-subtle">
+      <div class="container overflow-hidden">
+        <div class="row gy-4 gy-md-0">
+          <div class="col-xs-12 col-md-7 order-1 order-md-0">
+            <div class="copyright text-center text-md-start">
+              &copy; 2023. All Rights Reserved.
+            </div>
+            <div class="credits text-secondary text-center text-md-start mt-2 fs-7">
+              Built by <a href="https://bootstrapbrain.com/" class="link-secondary text-decoration-none">BootstrapBrain</a> with <span class="text-primary">&#9829;</span>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-5 order-0 order-md-1">
+            <ul class="nav justify-content-center justify-content-md-end">
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="https://www.facebook.com/hoimauhanoi" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="https://www.youtube.com/@hoimauhanoi" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                  </svg>
+                </a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="https://www.instagram.com/hoimauhanoi" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Javascript Files: Vendors -->
+  <script src="https://unpkg.com/jquery@3.6.1/dist/jquery.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+  <script src="https://unpkg.com/isotope-packery@2.0.1/packery-mode.pkgd.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@5.0.0/imagesloaded.pkgd.min.js"></script>
+  <script src="https://unpkg.com/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Javascript Files: Controllers -->
+  <script src="./assets/controller/project-2.js"></script>
+  <script src="./assets/controller/wave-bsb.js"></script>
+</body>
+
 </html>
