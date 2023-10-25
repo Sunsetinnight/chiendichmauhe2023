@@ -505,6 +505,10 @@
               <div class="col-12 col-xl-11">
                 <div class="bg-white border rounded shadow-sm overflow-hidden">
     
+
+                <!-- FORM ĐĂNG KÝ -->
+
+
                   <form action="" name="Submit-Youthcamp">
                     <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
                       <div class="col-12">
@@ -515,32 +519,32 @@
                         <label for="" class="form-label">Giới tính <span class="text-danger">*</span></label>
     
                           <select class="form-control" id="sex" name="sex" required>
-                            <option value="value1">Nam</option>
-                            <option value="value2">Nữ</option>
+                            <option value="nam">Nam</option>
+                            <option value="nữ">Nữ</option>
                           </select>
                       
                       </div>
                       <div class="col-12 col-md-6">
                         <label for="phone" class="form-label">Số điện thoại</label>
                         
-                          <input type="tel" class="form-control" id="phone" name="phone" value="">
+                          <input type="tel" class="form-control" id="phone" name="phonenumber" value="" required>
                        
                       </div>
                       <div class="col-12">
                         <label for="subject" class="form-label">Địa chỉ <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="subject" name="subject" value="" required>
+                        <input type="text" class="form-control" id="subject" name="add" value="" required>
                       </div>
                       <div class="col-12">
                         <label for="subject" class="form-label">Đơn vị học tập/công tác <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="subject" name="subject" value="" required>
+                        <input type="text" class="form-control" id="subject" name="study" value="" required>
                       </div>
                       <div class="col-12">
                         <label for="subject" class="form-label">Người giới thiệu bạn tham gia Youth Camp<span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="subject" name="subject" value="" required>
+                        <input type="text" class="form-control" id="subject" name="info" value="" required>
                       </div>
                       <div class="col-12">
                         <label for="message" class="form-label">Mong muốn của bạn khi tham gia Youth Camp<span class="text-danger">*</span></label>
-                        <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                        <textarea class="form-control" id="message" name="tell" rows="3" required></textarea>
                       </div>
                       <div class="col-12">
                         <div class="d-grid">
@@ -550,17 +554,59 @@
                     </div>
                   </form>
                   
+
+                  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
                   <script>
-                    const scriptURL = 'https://script.google.com/macros/s/AKfycbwcGVUWd5nmnnBHg7NB8JrPY9EQHBixz0Tncru4ADXPLRquaMIo7KUY-Sg_AiUmYVFXwA/exec'
-                    const form = document.forms['Submit-Youthcamp']
+                    const form = document.forms['Submit-Youthcamp'];
+                    const successMessage = document.getElementById('submit-success');
+                    const submitBtn = document.getElementById('submitBtn');
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbwcGVUWd5nmnnBHg7NB8JrPY9EQHBixz0Tncru4ADXPLRquaMIo7KUY-Sg_AiUmYVFXwA/exec';
                   
+                   let formSubmitted = false;
+  
                     form.addEventListener('submit', e => {
-                      e.preventDefault()
-                      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                        .then(response => console.log('Success!', response))
-                        .catch(error => console.error('Error!', error.message))
-                    })
+                    e.preventDefault();
+                    if (formSubmitted) {
+                      // Hiển thị thông báo nếu người dùng cố gắng gửi lại biểu mẫu
+                      Swal.fire({
+                      title: 'Thông báo',
+                      text: 'Bạn đã gửi đơn đăng ký thành công. Vui lòng chỉ gửi một lần!',
+                      icon: 'warning',
+                      confirmButtonText: 'Đồng ý'
+                      });
+                      
+                      return; // Không thực hiện xử lý nếu biểu mẫu đã được gửi
+                    }
+                    
+                    formSubmitted = true;
+                    // Code gửi biểu mẫu tới server
+                    fetch(scriptURL, { method: 'post', body: new FormData(form) })
+                      .then(response => {
+                      if (response.ok) {
+                        // Hiển thị popup thành công
+                        Swal.fire({
+                        icon: 'success',
+                        title: 'GỬI ĐƠN THÀNH CÔNG',
+                        text: 'Youth Camp xin cảm ơn, vui lòng kiểm tra kết quả qua tin nhắn SMS sau thời gian mở đơn!',
+                        });
+                        form.reset();
+                      } else {
+                        throw new Error('Gửi đơn thất bại');
+                      }
+                      })
+                      .catch(error => console.error(error));
+                    submitBtn.classList.add('success');
+                    });
+                    // Kiểm tra xem biểu mẫu đã được gửi thành công hay chưa
+                    if (sessionStorage.getItem('successMessage')) {
+                    successMessage.style.display = 'block'; // Hiển thị thông báo thành công
+                    
+                    // Vô hiệu hóa nút submit
+                    submitBtn.disabled = true;
+                    }
                   </script>
+
+                  
     
                 </div>
               </div>
